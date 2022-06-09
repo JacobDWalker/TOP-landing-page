@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Roboto;
-    
+    margin: 0;
 }
 
 .header {
@@ -18,13 +18,14 @@ body {
 
 .subheader {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     background-color: #1F2937;
     padding-bottom: 24px;
     align-items: center;
     padding-left: 96px;
     padding-right: 96px;
+    gap: 7em;
 }
 
 .subheader-left, .subheader-right {
@@ -57,7 +58,7 @@ img {
     margin-bottom: 10px;
 }
 
-.subheader-left button {
+button {
     background-color: #3882F6;
     font-family: inherit;
     color: #E5E7EB;
@@ -66,6 +67,7 @@ img {
     font-size: 14px;
     padding: 8px 32px;
     font-weight: bolder;
+    flex-shrink: 0;
 }
 
 ul {
@@ -161,3 +163,44 @@ a {
     color: #1F2937;
 }
 
+.action-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    margin: 48px;
+    width: 800px;
+    height: 200px;
+    background-color: #3882F6;
+    align-self: center;
+}
+
+.action-box {
+    display: flex;
+}
+
+.action-box-container button {
+    outline: auto;
+}
+
+.action-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #E5E7EB;
+    
+}
+
+.call-to-action {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    font-family: inherit;
+    padding: 48px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+}
